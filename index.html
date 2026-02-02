@@ -1,233 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Arfa 🎉</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mari Knz Arfa Kahild! 🎉</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink: #ff6b9d;
+            --purple: #9d4edd;
+            --gold: #ffd166;
+            --blue: #4cc9f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f9f0ff 0%, #fff0f7 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: #333;
+        }
+        
+        .birthday-title {
+            font-family: 'Dancing Script', cursive;
+            color: var(--pink);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 3.5rem;
+        }
+        
+        .special-name {
+            background: linear-gradient(45deg, var(--pink), var(--purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 800;
+        }
+        
+        .birthday-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border: 8px solid white;
+            transition: transform 0.5s ease;
+        }
+        
+        .birthday-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .hero-section {
+            background: linear-gradient(to right, var(--purple), var(--pink));
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .birthday-icon {
+            font-size: 4rem;
+            color: var(--gold);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .message-box {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-left: 8px solid var(--pink);
+        }
+        
+        .wish-btn {
+            background: linear-gradient(to right, var(--purple), var(--pink));
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .wish-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+        
+        .photo-frame {
+            border: 15px solid white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.5s ease;
+        }
+        
+        .quote-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            font-style: italic;
+            border: 1px dashed var(--purple);
+            margin-bottom: 20px;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        .gift-box {
+            background: linear-gradient(45deg, var(--gold), #ffb347);
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .gift-box:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .memory-box {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s;
+        }
+        
+        .memory-box:hover { transform: translateY(-5px); }
+        
+        .footer {
+            background: linear-gradient(to right, var(--purple), var(--pink));
+            color: white;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
 
-<style>
-body{
-    margin:0;
-    height:100vh;
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#ff758c,#ff7eb3);
-    overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#fff;
-    text-align:center;
-}
+        .confetti {
+            position: fixed;
+            width: 15px;
+            height: 15px;
+            top: -10px;
+            z-index: 1000;
+        }
 
-.card{
-    background:rgba(0,0,0,0.35);
-    padding:25px;
-    border-radius:25px;
-    width:90%;
-    max-width:420px;
-    z-index:5;
-}
-
-h1{font-size:32px;}
-.name{font-size:22px;font-weight:600;}
-
-#typing{
-    font-size:15px;
-    min-height:90px;
-    line-height:1.6;
-    margin:10px 0;
-}
-
-button{
-    padding:14px 28px;
-    border:none;
-    border-radius:30px;
-    background:#ffd700;
-    font-weight:600;
-    cursor:pointer;
-}
-
-.cake{
-    font-size:55px;
-    animation:bounce 1s infinite;
-}
-@keyframes bounce{
-    50%{transform:translateY(-12px);}
-}
-
-/* Slider */
-.slider img{
-    width:100%;
-    border-radius:15px;
-    display:none;
-    margin-top:15px;
-}
-
-/* Floating hearts */
-.heart{
-    position:absolute;
-    font-size:20px;
-    animation:float 5s linear infinite;
-}
-@keyframes float{
-    from{transform:translateY(100vh);}
-    to{transform:translateY(-10vh);}
-}
-
-/* Game */
-#game{display:none;}
-.game-heart{
-    position:absolute;
-    font-size:30px;
-    cursor:pointer;
-    animation:fall 4s linear forwards;
-}
-@keyframes fall{
-    from{top:-40px;}
-    to{top:100vh;}
-}
-
-/* Fireworks */
-.firework{
-    position:absolute;
-    width:6px;
-    height:6px;
-    border-radius:50%;
-}
-</style>
+        #balloons-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .balloon {
+            position: absolute;
+            width: 50px; height: 65px;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="card">
-    <h1>🎉 Happy Birthday 🎉</h1>
-    <div class="name">Arfa Khalid 💖</div>
-
-    <div id="typing"></div>
-
-    <button onclick="startAll()">Surprise + Game + Fireworks 🎁🎮🎆</button>
-
-    <div id="surprise" style="display:none;">
-        <div class="cake">🎂</div>
-
-        <div class="slider">
-            <img src="img1.jpg">
-            <img src="img2.jpg">
-            <img src="img3.jpg">
+    <div id="balloons-container"></div>
+    <div id="confetti-container"></div>
+    
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="birthday-title mb-3 floating">Happy Birthday!</h1>
+            <h2 class="display-4 fw-bold mb-4">To Our Special <span class="special-name">Mari Knz Arfa Kahild</span> 🎂</h2>
+            <p class="lead mb-4">A day to celebrate the wonderful person you are!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="birthday-card p-4 mx-auto">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="photo-frame">
+                                    <img src="https://images.unsplash.com/photo-1464347601390-25e2842a37f7?auto=format&fit=crop&w=500&q=80" class="img-fluid" alt="Celebration">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-3">
+                                    <i class="ri-cake-3-line birthday-icon mb-3"></i>
+                                    <h3 class="fw-bold mb-3" style="color: var(--purple);">Keep Smiling!</h3>
+                                    <p class="mb-3">May your year be full of Laravel projects, creative SketchUp designs, and endless success!</p>
+                                    <button id="wishBtn" class="wish-btn pulse">
+                                        <i class="ri-heart-3-fill me-2"></i> Click for Magic
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div id="game">
-            <h3>💖 Catch the Hearts 💖</h3>
-            <p>Score: <span id="score">0</span></p>
+    </section>
+    
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5" style="color: var(--purple);">Wishes Just For You</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="quote-card">"Count your life by smiles, not tears. Count your age by friends, not years."</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="quote-card">"A birthday is not a year older, but a year better and wiser."</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="quote-card">"May your life be as organized and beautiful as a perfect AutoCAD drawing!"</div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <p><b>— From Aryan 💙</b></p>
-    </div>
-</div>
-
-<audio id="song">
-<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
-</audio>
-
-<script>
-// ❤️ Typing Message
-const message =
-"Arfa,\nAaj ka din sirf birthday nahi…\n" +
-"yeh us muskurahat ka jashan hai\n" +
-"jo tum sab ke chehron par le aati ho 💫\n" +
-"Allah tumhari zindagi ko khushiyon,\n" +
-"success aur sukoon se bhar de 🤍\n" +
-"Hamesha aisi hi pyari rehna 🌸";
-
-let i=0;
-function typeText(){
-    if(i<message.length){
-        typing.innerHTML += message.charAt(i)==="\n"?"<br>":message.charAt(i);
-        i++;
-        setTimeout(typeText,45);
-    }
-}
-typeText();
-
-// 🚀 Start Everything
-function startAll(){
-    document.getElementById("surprise").style.display="block";
-    document.getElementById("game").style.display="block";
-    document.getElementById("song").play();
-    hearts();
-    slider();
-    startGame();
-    fireworks();
-}
-
-// 💖 Hearts
-function hearts(){
-    setInterval(()=>{
-        let h=document.createElement("div");
-        h.className="heart";
-        h.innerHTML="💖";
-        h.style.left=Math.random()*100+"vw";
-        document.body.appendChild(h);
-        setTimeout(()=>h.remove(),5000);
-    },350);
-}
-
-// 📸 Slider
-let slide=0;
-function slider(){
-    let imgs=document.querySelectorAll(".slider img");
-    imgs[0].style.display="block";
-    setInterval(()=>{
-        imgs[slide].style.display="none";
-        slide=(slide+1)%imgs.length;
-        imgs[slide].style.display="block";
-    },2200);
-}
-
-// 🎮 Game
-let score=0;
-function startGame(){
-    score=0;
-    scoreEl.innerText=score;
-    let game=setInterval(()=>{
-        let h=document.createElement("div");
-        h.className="game-heart";
-        h.innerHTML="💖";
-        h.style.left=Math.random()*90+"vw";
-        h.onclick=()=>{score++;scoreEl.innerText=score;h.remove();}
-        document.body.appendChild(h);
-        setTimeout(()=>h.remove(),4000);
-    },800);
-
-    setTimeout(()=>{
-        clearInterval(game);
-        alert("🎉 Game Over!\nArfa 💖 Score: "+score+"\nHappy Birthday 🎂");
-    },15000);
-}
-
-// 🎆 Fireworks
-function fireworks(){
-    setInterval(()=>{
-        for(let i=0;i<25;i++){
-            let f=document.createElement("div");
-            f.className="firework";
-            f.style.left=Math.random()*100+"vw";
-            f.style.top=Math.random()*100+"vh";
-            f.style.background=`hsl(${Math.random()*360},100%,50%)`;
-            document.body.appendChild(f);
-
-            f.animate([
-                {transform:"scale(1)",opacity:1},
-                {transform:"scale(4)",opacity:0}
-            ],{duration:1200});
-
-            setTimeout(()=>f.remove(),1200);
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h2 class="fw-bold mb-4" style="color: var(--pink);">Your Birthday Surprise</h2>
+                    <div class="gift-box mb-4" id="giftBox">
+                        <i class="ri-gift-line" style="font-size: 3rem; color: white;"></i>
+                    </div>
+                    <h4 id="giftMessage" class="mt-3 text-muted">Tap the gift to open!</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" style="color: var(--pink);">Success & Happiness</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="memory-box">
+                        <i class="ri-code-box-line mb-3" style="font-size: 2rem; color: #f4645f;"></i>
+                        <h4 class="fw-bold">Career Growth</h4>
+                        <p>May your skills in Laravel and Engineering reach new heights this year. You are truly talented!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="memory-box">
+                        <i class="ri-building-2-line mb-3" style="font-size: 2rem; color: var(--blue);"></i>
+                        <h4 class="fw-bold">Creative Designs</h4>
+                        <p>Wishing you amazing new projects in Architecture and Mechanical design. Keep building the future!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="memory-box">
+                        <i class="ri-sun-line mb-3" style="font-size: 2rem; color: var(--gold);"></i>
+                        <h4 class="fw-bold">Life's Joy</h4>
+                        <p>Beyond work, may your personal life be filled with peace, health, and laughter with loved ones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer text-center">
+        <div class="container">
+            <h3>Happy Birthday <span class="special-name">Mari Knz Arfa Kahild!</span></h3>
+            <p class="mt-3">Made with <i class="ri-heart-3-fill" style="color: #ffcccc;"></i> for your special day</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Balloon creation
+        const container = document.getElementById('balloons-container');
+        const colors = ['#ff6b9d', '#9d4edd', '#ffd166', '#4cc9f0'];
+        for (let i = 0; i < 20; i++) {
+            const b = document.createElement('div');
+            b.className = 'balloon';
+            b.style.left = Math.random() * 100 + '%';
+            b.style.bottom = '-100px';
+            b.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            b.style.animation = `floating ${3 + Math.random() * 2}s ease-in infinite`;
+            b.style.animationDelay = Math.random() * 5 + 's';
+            container.appendChild(b);
         }
-    },1500);
-}
-</script>
 
+        // Gift Surprise
+        const giftBox = document.getElementById('giftBox');
+        const giftMessage = document.getElementById('giftMessage');
+        giftBox.addEventListener('click', () => {
+            giftBox.style.transform = 'scale(1.2) rotate(360deg)';
+            giftMessage.innerHTML = "<span class='special-name' style='font-size:1.5rem;'>You deserve the best day ever! 🌟</span>";
+            createExplosion();
+        });
+
+        function createExplosion() {
+            for(let i=0; i<50; i++) {
+                const conf = document.createElement('div');
+                conf.className = 'confetti';
+                conf.style.left = '50%';
+                conf.style.top = '50%';
+                conf.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+                document.body.appendChild(conf);
+                
+                const destX = (Math.random() - 0.5) * 500;
+                const destY = (Math.random() - 0.5) * 500;
+                
+                conf.animate([
+                    { transform: 'translate(0,0)', opacity: 1 },
+                    { transform: `translate(${destX}px, ${destY}px)`, opacity: 0 }
+                ], { duration: 1000, fill: 'forwards' });
+            }
+        }
+
+        document.getElementById('wishBtn').addEventListener('click', () => {
+            alert('A special blessing is sent your way! ✨');
+            createExplosion();
+        });
+    </script>
 </body>
 </html>
