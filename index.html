@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arfa-Birthday 🎁</title>
+    <title>Birthday Surprise! 🎁</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Nastaliq+Urdu&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -95,6 +95,9 @@
 
         .gift-image {
             width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
             border-radius: 20px;
             margin-bottom: 15px;
             border: 4px solid var(--gold);
@@ -129,8 +132,7 @@
 
     <div class="overlay" id="overlay" onclick="closeGift()"></div>
     <div id="gift-container">
-        <img src="https://ibb.co/rRWHBkdJ" alt="Surprise" class="gift-image"
-        <img src="https://i.ibb.co/Kp1Wt6KH/Screenshot-2026-02-02-18-59-27-24-6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="Surprise" class="gift-image border="0">
+        <img src="https://i.ibb.co/Kp1Wt6KH/Screenshot-2026-02-02-18-59-27-24-6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="Surprise" class="gift-image">
         
         <h2 class="urdu-text" style="color: var(--accent);">سالگرہ بہت بہت مبارک ہو!</h2>
         <p class="fw-bold">Mari Knz Arfa Kahild</p>
@@ -150,7 +152,7 @@
             </button>
         </div>
         
-        <div class="footer-tag">
+        <div class="footer-tag text-center">
             <p class="urdu-text m-0">سدا ہنستی مسکراتی رہیں</p>
         </div>
     </section>
